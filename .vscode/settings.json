@@ -1,0 +1,30 @@
+{
+  "dart.flutterSdkPath": ".fvm/versions/3.29.3",
+  "files.exclude": {
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
+    "**/.git": false
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.dart": "$(capture).freezed.dart, $(capture).g.dart",
+    "*": "${capture}.lock",
+    "pubspec.yaml": ".metadata, .packages, all_lint_rules.yaml, analysis_options.yaml, build.yaml, pubspec.lock, pubspec_overrides.yaml"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.quickFix": "always",
+    "quickfix.add.required": "always",
+    "quickfix.create.constructorForFinalFields": "always"
+  },
+  "editor.formatOnSave": true,
+  "dart.lineLength": 120,
+  "[dart]": {
+    "editor.rulers": [
+      120
+    ]
+  },
+  "dart.previewFlutterUiGuides": true,
+  "terminal.integrated.suggest.enabled": true
+}
